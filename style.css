@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  cursor: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 1rem;
+}
+
+.nav-links,
+h1 {
+  flex: 1;
+}
+
+.front-cover {
+  width: 40%;
+  margin: auto;
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  /* to get the cricle centered in the place of mouse */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: -1;
+  backdrop-filter: blur(3px);
+}
+
+.link-grow {
+  transform: scale(2);
+  background: black;
+}
+
+.hovered-link {
+  color: white;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+.front-cover img {
+  position: relative;
+  z-index: -4;
+}
+
+.changed-grow {
+  transform: scale(1.3);
+  background-image: url("http://img1.wikia.nocookie.net/__cb20140401031917/marvelcinematicuniverse/images/8/8a/Thor_tdw_game_icon.png");
+  background-position: center;
+  object-fit: fill;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.front-desc {
+  width: 10%;
+  margin: auto;
+}
